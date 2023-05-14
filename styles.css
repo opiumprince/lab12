@@ -1,0 +1,79 @@
+  .grid-container {
+display: grid;
+
+position: absolute;
+height:100%;
+width:100%;
+gap: 3px;
+margin:0;
+padding:auto;
+}
+/*grid*/
+body {
+grid-template-areas:
+"HEADER HEADER HEADER HEADER HEADER"
+"AND MAIN ADD NAV ARTICLE"
+"AND MAIN ADD NAV ARTICLE"
+"AND MAIN ADD NAV ARTICLE"
+"FOOTER FOOTER FOOTER FOOTER FOOTER";
+
+grid-template-rows: 10% auto auto auto 10%;
+grid-template-columns:5% 20% 25% 25% ;
+}
+
+#pageHEADER{
+    grid-area:HEADER;
+    background-color:#1274c5;
+    border-bottom: 2px solid;
+    border-color: #ec0000;
+    }
+
+    #pageMAIN{
+        grid-area:MAIN;
+        border-Style: 1px solid;
+        border-color: #c9bbbb;
+        }
+
+        #pageFOOTER{
+            grid-area:FOOTER;
+            background-color:#1f1c1c;
+            border-Style: 1px solid;
+            border-color: #c9bbbb;
+            }
+
+            #pageNAV{
+            grid-area:NAV;
+            border-Style: 1px solid;
+            border-color: #c9bbbb;
+            }
+
+            #pageARTICLE{
+            grid-area:ARTICLE;
+            border-Style: 1px solid;
+            border-color: #c9bbbb;
+            }
+
+            #pageADD{
+            grid-area:ADD;
+            border-Style: 1px solid;
+            border-color: #c9bbbb;
+            }
+
+            #pageAND{
+            grid-area:AND;
+            border-Style: 1px solid;
+            border-color: #c9bbbb;
+            }
+
+
+
+h1{color:#1f1c1c; margin-top: 10px; font-weight: bold; font-size: 18px; padding-left :22px;text-align:left;}
+h2{color: aliceblue;font-size: 12px;text-align: left; padding-left: 37px; }
+h3{color: #c2b2b2; font-size: 12px; text-align: center; font-weight: normal;}
+main-p{color: #5689e9; font-size: 21px; font-weight: bold;}
+main-g{color: #51ce17; font-size: 21px; font-weight: bold;padding-left: 6%;}
+main-or{color: #ee8027; font-size: 21px; font-weight: bold;padding-left: 6%;}
+back-p{color: #6d6767; font-weight: normal; font-size: 14px;text-align: right;}
+bold-p{color: #1f1c1c; font-weight: bold; font-size: 14px;text-align: right;}
+back-h{color: #6d6767; font-weight: normal; font-size: 14px;text-align: right;padding-left: 6%;}
+bold-h{color: #1f1c1c; font-weight: bold; font-size: 14px;text-align: right;padding-left: 6%;}

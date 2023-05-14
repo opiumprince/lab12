@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>12lab</title>
+</head>
+
+<body class="grid-container">
+<and id="pageAND">
+</and>
+
+<header id="pageHEADER" >
+<h1>Мій особистий блог &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Вхід &nbsp;&nbsp;Реєстрація</h1> 
+<h2>Дрюк Богдан</h2>
+</header>
+
+<footer id = "pageFOOTER">  
+<h3>©Всі права захищені. <br>
+Розробник: Дрюк Богдан</h3>  
+</footer>
+
+<main id = "pageMAIN">
+<main-p>Create a Repository </main-p><br>
+<back-p>From scratch -- Create a new local repository</back-p><br>
+<bold-p>$ git init [project name]</bold-p>
+<br>
+<back-p>Download from an existing repository</back-p><br>
+<bold-p>$ git clone my_url</bold-p>
+<br><br>
+<main-p>Observe your Repository</main-p><br>
+<back-p>List new or modified files not yet commited</back-p><br>
+<bold-p>$ git status</bold-p><br>
+<back-p>Show the changes to files not yet staget</back-p><br>
+<bold-p>$ git diff</bold-p><br>
+<back-p>Show the changes to staget files</back-p><br>
+<bold-p>$ git diff --cached</bold-p><br>
+<back-p>Show all staget and unstaget file changes</back-p><br>
+<bold-p>$ git diff HEAD</bold-p><br>
+<back-p>Show the changes between two commit ids</back-p><br>
+<bold-p>$ git diff commitl commit2</bold-p><br>
+<back-p>List the change dates and authors for a file</back-p><br>
+<bold-p>$ git blame[file]</bold-p><br>
+<back-p>Show the file changes for a commit id and/or file</back-p><br>
+<bold-p>$ git show[commit]:[file]</bold-p><br>
+<back-p>Show full change history</back-p><br>
+<bold-p>$ git log</bold-p><br>
+<back-p>Show change history for file/directory including diffs</back-p><br>
+<bold-p>$ git log -p [file/directory]</bold-p><br>
+</main>
+
+<add id="pageADD">
+<main-g>Working with Branches</main-g><br>
+<back-h>List all local branches</back-h><br>
+<bold-h>$ git branch</bold-h><br>
+<back-h>List all branches, local and remote</back-h><br>
+<bold-h>$ git branch -av</bold-h><br>
+<back-h>Swich to a branch and update working directory</back-h><br>
+<bold-h>$ git checkout my_branch</bold-h><br>
+<back-h>Create a new branch called new_branch</back-h><br>
+<bold-h>$ git branch new_branch</bold-h><br>
+<back-h>Delete the branch called my_branch</back-h><br>
+<bold-h>$ git branch -d my_branch</bold-h><br>
+<back-h>Merge branch_a into branch_b</back-h><br>
+<bold-h>$ git checkout branch_b</bold-h><br>
+<bold-h>$ git merge branch_a</bold-h><br>
+<back-h>Tag the current commit</back-h><br>
+<bold-h>$ git tag my_tag</bold-h><br>
+</add>
+
+<nav id ="pageNAV">
+<main-g>Make a change</main-g><br>
+<back-h>Stages the file,ready for commit</back-h><br>
+<bold-h>$ git add [file]</bold-h><br>
+<back-h>Stage all changed files,ready for comit</back-h><br>
+<bold-h>$ git add.</bold-h><br>
+<back-h>Commit all stages files to versioned history</back-h><br>
+<bold-h>$ git commit -m "commit message"</bold-h><br>
+<back-h>Commit all your tracked files to versioned history</back-h><br>
+<bold-h>$ git commit -am "commit message"</bold-h><br>
+<back-h>Unstages file,keeping the file changes</back-h><br>
+<bold-h>$ git reset [file]</bold-h><br>
+<back-h>Revert everything to the commit</back-h><br>
+<bold-h>$ git reset --hard</bold-h><br>
+</nav>
+
+<article id="pageARTICLE">
+<main-or>Synchronize</main-or><br>
+<back-h>Get the latest changes from origin (no merge)</back-h><br>
+<bold-h>$ git fetch</bold-h><br>
+<back-h>Get the latest changes from origin and merge</back-h><br>
+<bold-h>$ git pull</bold-h><br>
+<back-h>Get the latest changes from origin and rebase</back-h><br>
+<bold-h>$ git pull --rebase</bold-h><br>
+<back-h>Push local changes to the origin</back-h><br>
+<bold-h>$ git push</bold-h><br>
+<br>
+<main-or>Finaly!</main-or><br>
+<back-h>When in doubt,use git help</back-h><br>
+<bold-h>$ git comand --help</bold-h><br>
+<br>
+<back-h>Or visit <a href="https://training.github.com/">https://training.github.com/</a></back-h>
+<br><back-h>for official GitHub training.</back-h>
+</article>
+
+</body>
+</html>

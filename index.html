@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12 Лабораторна робота </title>
+    <style>
+     .grid-container {
+        display: grid;
+        position: absolute;
+        height:100%;
+        width:100%;
+        gap: 3px;
+        margin:0;
+        padding:0;
+        grid-template-areas:
+        "HEADER HEADER HEADER HEADER"
+        "MAIN MAIN MAIN MAIN"
+        "MAIN MAIN MAIN MAIN"
+        "MAIN MAIN MAIN MAIN"
+        "FOOTER FOOTER FOOTER FOOTER";
+
+        grid-template-rows: 10% auto auto auto 10%;
+        grid-template-columns:auto auto auto auto  ;
+    }
+
+    #pageHEADER{
+        grid-area:HEADER;
+        background-color:#1274c5;
+        border-bottom: 2.3px solid;
+        border-color: #ec0000;
+    }
+
+    #pageMAIN{
+        grid-area:MAIN;
+        background-color:#ffffff;
+        border: 1px solid #c9bbbb;
+    }
+
+    #pageFOOTER{
+        grid-area:FOOTER;
+        background-color:#1f1c1c;
+        border: 1px solid #c9bbbb;
+    }
+
+    h1{color:#1f1c1c; margin-top: 10px; font-weight: bold; font-size:
+18px; padding-left :22px;text-align:left;}
+h2{color: aliceblue;font-size: 12px;text-align: left; padding-left: 37px; }
+h3{color: #c2b2b2; font-size: 12px; text-align: center; font-weight: normal;padding-top: 30px;}
+p{color: #1f1c1c; font-size: 11px; text-align: left;}
+
+table{background: #ffffff; width: 21%; border:1px solid black;}
+td{border: 0px; }
+select{width: 100%;}
+</style>
+</head>
+<body class="grid-container">
+   
+<header id="pageHEADER" >
+<h1>Мій особистий блог &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Вхід Реєстрація</h1> 
+<h2>Дрюк Богдан</h2>
+</header>
+
+<main id = "pageMAIN">
+    
+<table align="center"  cellpadding="7" cellspacing="1">
+<br>
+<tr  align="center" bgcolor="#1274c5">
+<td><font size="3" font-weight="bold"  color="white">Реєстрація користувача</font></td>
+</tr>
+
+<tr>
+<td> <font size="2">Прізвище </font> <input name="Surname" type="text" maxlength="40" size="35%" value=""> </td>
+</tr>
+       
+<tr> 
+<td> <font size="2">Ім'я</font> <input name="Name" type="text" maxlength="40" size="39,6%" value=""></td>
+</tr>
+        
+<tr> 
+<td> <font size="2">Логін </font> <input name="Login" type="text" maxlength="40" size="38" value=""></td>
+</tr>
+
+<tr> 
+<td> <font size="2"> Навчальна група</font>
+<select>
+<option value="1">101-ТК</option> 
+<option value="2">102-ТК</option>
+<option value="3">103-ТК</option> 
+</select> </td>
+</tr>
+
+<tr> 
+<td><font size="2">Пароль</font> <input name="Password" type="text" maxlength="40" size="37" value=""></td>
+</tr>
+
+<tr> 
+<td> <font size="2">Підтверження паролю</font> <input name="PasswordConfirm" type="text" maxlength="40" size="44" value=""> </td>
+</tr>
+
+<tr> 
+<td  align="right"> <input type="submit" value="Зареєструватись"></td>
+</tr>
+
+</table>
+</main>
+
+<footer id = "pageFOOTER">  
+    <h3>©Всі права захищені.</h3>  
+</footer>
+
+</body>
+</html>
